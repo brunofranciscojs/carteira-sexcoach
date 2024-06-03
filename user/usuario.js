@@ -1,14 +1,17 @@
 let alunos = [JSON.parse(localStorage.getItem('aluno'))]
 
 let html = '';
+
+const fotoAleatoria = () => `./0000${Math.floor(Math.random() * 99)+10}.jpg`
+
 alunos.forEach(aluno =>{
     html = 
         `
         <div class="aluno flex justify-center flex-col">
 
             <div class="foto py-8">
-                <img src="./${aluno.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(' ').join('')}.jpg" 
-                    draggable="false" class="block mx-auto border-2 border-white w-36" />
+                <img src="${fotoAleatoria()}" 
+                    draggable="false" class="block mx-auto border-2 border-white w-36 h-56 object-cover" />
             </div>
             
             <div class="flex flex-col justify-center">
