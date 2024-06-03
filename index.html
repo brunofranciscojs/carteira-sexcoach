@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/png" href="sex.png"/>
+		<link rel="shortcut icon" type="image/png" href="sex.ico"/>
+		<meta name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="theme-color" content="#1e404e">
+		<meta name="msapplication-navbutton-color" content="#1e404e" />   
+		<meta name="apple-mobile-web-app-capable" content="yes">  
+		<meta name="apple-mobile-web-app-status-bar-style" content="#1e404e">
+		<link rel="stylesheet" href="./css/sexcoach.css">
+	</head>
+
+	<body>
+		<div id="overlay" ></div>
+		<div class="opacity-0 overflow-hidden text-center absolute h-0 w-full top-0 left-0">USUÁRIO OU CPMES INVÁLIDO</div>
+
+		<section class="w-full mx-auto absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 px-5">
+			<div class="mx-auto max-w-[960px] w-full text-center">   
+				<h2 class="block text-center text-4xl font-semibold">CARTEIRA DIGITAL SEXCOACH</H2>
+				<span class="block text-center text-gray-400 text-2xl">Entre com seu nome ou nº da CPMES para acessar.</span>
+		
+				<form name="login" class="flex flex-col gap-5 py-12">
+					<div class="relative w-full">
+						<input type="text" placeholder="NOME" autocomplete="off" class="w-full px-5">
+						<div results></div>
+					</div>
+						OU
+					<input type="tel" pattern="d\*" placeholder="CPMES" class="w-full px-5">
+				</form>
+
+				<br><br>
+			</div>
+		</section>
+
+		<script src="./js/script.js" ></script>
+
+</body>
+
+</html>

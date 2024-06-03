@@ -1,0 +1,17 @@
+{
+  "name": "carteiras",
+  "version": "1.0.0",
+  "description": "Carteiras digitais para o curso de Sexcoach",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "sexcoach"
+  ],
+  "author": "Bruno",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
