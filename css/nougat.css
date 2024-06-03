@@ -1,0 +1,364 @@
+body {
+ background-color:#1e404e;
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@media print {
+    body {
+        background-color: #E6E7E9 !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+#name, #fun{
+  margin-bottom: 11px
+}
+body::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+input{
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  pointer-events: none;
+}
+input::-webkit-input-placeholder{
+  color: #1e404e;
+}
+input::-moz-placeholder{
+  color: #1E404E;
+}
+
+input#va::-webkit-input-placeholder{
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -1px
+}
+
+#name, #cp, #ven, #doc, #rg, #fun, #em, #ven{
+  background-color: #ffffe0;
+  height: 30px;
+  text-align: left;
+  font-size: 11px;
+  color: #1E404E;
+}
+input{
+  background-color: transparent
+}
+
+#doc{
+  width: 48%;
+  float: left;
+  padding-left: 5px
+}
+
+#cp{
+  width: 46%;
+  float: right;
+  padding-left: 5px
+}
+
+#em{
+  width: 48%;
+  float: left;
+  padding-left: 5px
+}
+
+#ven{
+  width: 48%;
+  float: left;
+  padding-left: 5px
+}
+#fun{
+  padding-left: 5px
+}
+
+input#func{
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  bottom: 13px !important;
+  letter-spacing: 5px
+}
+
+input#nome{
+  font-size: 20px;
+  padding-top: 14px;
+  letter-spacing: 1px
+}
+#overlay {
+  opacity:0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    z-index: 0;
+    cursor: pointer;
+}
+#overlay::selection{
+  background: #1e404e;
+}
+
+@media screen and (max-width:415px){
+  h2{
+    font-size: 20px !important;
+  }
+  p{
+    font-size: 13px !important;
+  }
+  body{
+    overflow: hidden;
+  }
+  #infs{
+    width: 318px !important;
+  }
+}
+@media screen and (max-width:321px){
+  #infs{
+    width: 312px !important;
+    margin: auto;
+    left: -8px !important;
+  }
+  #txt{
+  width: 104% !important;
+}
+}
+#carteira{
+  background-color: #1e404e;
+  position: relative;
+}
+#infs{
+  position: relative;
+  width: 318px;
+  margin: auto;
+  left: -13px;
+  top: -15px
+}
+#infs h2, p{
+  color: white;
+}
+#infs p{
+  font-weight: 100;
+  font-size: 14px;
+}
+#infs h2{
+  font-size: 22px;
+}
+#foto img{
+  width: 110px;
+  position: relative;
+  top: -20px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+  border: 2px solid white;
+  left: -10px;
+}
+
+#foto{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+  width: 110px;
+}
+#foto img::selection {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+input#nome{
+  width: 95%;
+}
+
+#bra img{
+  width: 20%;
+  float: none;
+}
+
+#bra{
+  position: relative;
+  top: -0px 
+}
+#txt{
+  width: 101%;
+}
+
+#txt p{
+  color: #ccc;
+}
+#txt p::selection{
+  background: #276a84 !important;
+}
+#txt p::-moz-selection{
+  background: #276a84;
+}
+
+#name, #fun{
+  margin-bottom: 10px
+}
+
+@media screen and (max-width:415px){
+  div#ven{
+    top: 17px !important;
+    position: relative;
+  }
+  #em{
+    position: relative;
+    top: 10px
+  }
+}
+input{
+  text-align: center;
+  width: 100%
+}
+
+input#cpm{
+  font-size: 16px
+}
+input#venc{
+  font-size: 16px
+}
+
+input#nasc{
+  font-size: 16px
+}
+
+input#rgd{
+  font-size: 15px;
+  line-height: 1.6 !important;
+}
+input#nome{
+  font-size: 17px!important;
+}
+
+br{
+  margin: 0.01px !important;
+}
+
+#qr img{
+  width: 108%;
+  float: right;
+}
+#foto img{
+  width: 100%
+}
+
+input#nome{
+  position: relative;
+  bottom: 8px
+}
+
+input#rgd{
+  position: relative;
+  bottom: 5px
+}
+
+input#cpm{
+  position: relative;
+  bottom: 3px
+}
+
+input#nasc{
+  position: relative;
+  bottom: 4px
+}
+
+input#venc{
+  position: relative;
+  bottom: 4px;
+}
+
+input#func{
+  bottom: 13px
+}
+#qr{
+  color: white;
+  font-size: 11px;
+  width: 41%;
+  position: absolute;
+  top: 122px;
+  left: 178px;
+  text-align:left;
+}
+
+#bra{
+  color: white;
+  font-size: 11px;
+  width: 60%;
+  position: absolute;
+  top: 213px;
+  left: 12px;
+  text-align:left;
+}
+#carteira h2{
+  color: #fff;
+}
+#qr span{
+  font-size: 9px;
+  float: left;
+  position: relative;
+  right: 4px;
+  padding-top: 2px;
+}
+
+#bra span{
+  float: left;
+}
+
+#bra img{
+  float: left;
+  width: 70%
+}
+
+#logo img{
+  width: 20%;
+}
+
+#logo{
+  position: absolute;
+  right: 33%;
+  top: 0;
+}
+@media screen and (max-width:415px){
+  #logo img{
+  width: 20%;
+}
+
+#logo{
+  position: absolute;
+  right: -15%;
+  top: 0;
+}
+  h2, p{
+  position: relative;
+  left: -10% !important;
+}
+  h2{
+  font-size: 19px !important;
+}
+
+p{
+  font-size: 12px !important;
+}
+}
+h2, p{
+  position: relative;
+  left: -3%;
+}
+
+h2{
+  font-size: 19px;
+}
+
+p{
+  font-size: 12px
+}
