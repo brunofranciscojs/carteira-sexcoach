@@ -13,13 +13,13 @@ document.querySelector('input[type="tel"]').addEventListener('change', (e) =>{
 })
 
 let students = []
-
 const fetchStudents = () => {
 	fetch('./js/alunos.json').then(res => res.json())
 	.then(json =>{
 		students = json;
 	})
-  }
+}
+fetchStudents()
 
 const cpmes = (cpm) =>{
 	const busca = students.filter(aluno =>{
@@ -41,18 +41,9 @@ const entrar = (e) =>{
 	students.filter(aluno =>{
 	if( e.target.tagName === 'SPAN' && e.target.innerText == aluno.name){
 
-				localStorage.setItem('aluno',
-					JSON.stringify({
-						id:btoa(aluno.name),
-						name:aluno.name,
-						document:aluno.document,
-						cpm:aluno.cpm,
-						emission:aluno.emission,
-						expiration:aluno.expiration
-					})
-				)
+			localStorage.setItem('id',btoa(aluno.name))
 			setTimeout(() =>{
-				window.location = `./user`
+				window.location = `./user/index.html?id=${btoa(aluno.name)}`
 			},200)
 
 		}else if(e.target.tagName === 'INPUT'){
@@ -61,4 +52,3 @@ const entrar = (e) =>{
 	})
 }
 
-fetchStudents()
