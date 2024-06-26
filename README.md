@@ -116,3 +116,21 @@ Este projeto é licenciado sob a licença MIT. Consulte o arquivo LICENSE para m
 
 ### Contato
 Para mais informações ou dúvidas, entre em contato:
+
+
+
+# Digital Wallet Project - MM Academy Institute
+
+## Welcome to the repository of the Digital Wallet project for the SexCoach course at MM Academy Institute. This project has been refactored to improve code efficiency and readability using helper functions, localStorage, and fetch for data manipulation. The new version eliminates the dependency on jQuery and reduces excessive if-else usage.
+
+## Technologies Used
+### HTML: Basic application structure.
+### Tailwind CSS: CSS framework for quick and responsive styling.
+### JavaScript: Data manipulation and interactive functionalities.
+
+## Features
+* Name Login: Autocomplete field suggesting student names as they are typed.
+* Card Number Login: Validation of card number for access.
+* Local Storage: Use of localStorage for user data persistence.
+* Search and Filter: Helper functions for searching and filtering student data.
+* Fetch API: Loading student data from a JSON file.
